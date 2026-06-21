@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>九游 · 一段旅程的叙述</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fafaf9;
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+      color: #1e1e1e;
+      line-height: 1.8;
+      padding: 2.5rem 1.25rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    /* 开篇 — 留白与寂静 */
+    .hero-short {
+      margin-bottom: 3.2rem;
+      letter-spacing: 0.04em;
+    }
+    .hero-short .line {
+      display: block;
+      font-size: 1.15rem;
+      color: #3b3b3b;
+      font-weight: 400;
+    }
+    .hero-short .line:first-child {
+      margin-bottom: 0.5rem;
+    }
+    .hero-short .line:last-child {
+      font-size: 1.1rem;
+      color: #6b6b6b;
+    }
+    .divider {
+      width: 2.4rem;
+      height: 2px;
+      background: #c7b7a3;
+      margin: 2.2rem 0 2.2rem 0;
+    }
+    /* 承接段落 — 平实而具体 */
+    .intro-text {
+      font-size: 1rem;
+      margin-bottom: 2.6rem;
+    }
+    .intro-text p {
+      margin-bottom: 1.6rem;
+    }
+    .intro-text a {
+      color: #8b6f4c;
+      text-decoration: none;
+      border-bottom: 1px solid #d9cdbf;
+      transition: border-color 0.15s;
+    }
+    .intro-text a:hover {
+      border-color: #8b6f4c;
+    }
+    /* 特点列表 — 克制卡片 */
+    .feature-list {
+      margin-bottom: 3rem;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      margin-bottom: 1.8rem;
+    }
+    .feature-item .num {
+      font-family: "Inter", "Helvetica Neue", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #b7a590;
+      min-width: 1.6rem;
+      line-height: 1.8;
+    }
+    .feature-item .desc {
+      font-size: 0.975rem;
+      line-height: 1.7;
+      color: #2e2e2e;
+    }
+    .feature-item .desc strong {
+      font-weight: 600;
+      color: #3b2e22;
+    }
+    /* 温和结尾 */
+    .closing {
+      border-top: 1px solid #e5ddd4;
+      padding-top: 2rem;
+      margin-top: 0.4rem;
+      font-size: 0.95rem;
+      color: #5a5a5a;
+    }
+    .closing p {
+      margin-bottom: 1rem;
+    }
+    .closing .remark {
+      font-style: normal;
+      background: #f3efe9;
+      padding: 0.2rem 0.6rem;
+      color: #4f4235;
+      font-size: 0.9rem;
+      display: inline-block;
+      border-radius: 2px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e9e1d7;
+      margin: 2.8rem 0 2rem;
+      width: 100%;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 1.8rem 1rem;
+      }
+      .hero-short .line {
+        font-size: 1rem;
+      }
+      .feature-item {
+        gap: 0.6rem;
+      }
+      .feature-item .num {
+        min-width: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- 开场短句 -->
+    <div class="hero-short">
+      <span class="line">有些事，起初只是一段代码。</span>
+      <span class="line">后来却成为一群人的日常。</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 承接段落：从主题内容展开 -->
+    <div class="intro-text">
+      <p>
+        大约十年前，一个名叫「九游」的地方开始被频繁提起。它不是一个具体的街角，也不是某个论坛的代号，而是许多人放下手机后，仍会想起的那个页面。最初只是试试看，后来慢慢变成了习惯——找游戏、看评价、偶尔跟陌生人聊两句。没有人规定这里应该长成什么样子，但不知不觉，它有了自己的节奏。
+      </p>
+      <p>
+        如今，这个平台依然在，名字没变，只是承载的东西比从前更多了。如果你曾经路过，或者只是听人说过，不妨再回去看一眼。那个叫 <a href="https://9you-portal.com">九游</a> 的地方，还留着不少老玩家没舍得删的存档。
+      </p>
+    </div>
+
+    <!-- 特点列表：安静叙述，不张扬 -->
+    <div class="feature-list">
+      <div class="feature-item">
+        <span class="num">01</span>
+        <span class="desc"><strong>发现</strong> —— 没有算法狂欢，大多数推荐来自真实玩家的游玩时长与简短点评，像朋友随口说的一句“这个还行”。</span>
+      </div>
+      <div class="feature-item">
+        <span class="num">02</span>
+        <span class="desc"><strong>痕迹</strong> —— 多年前的攻略帖还沉在底部，偶尔被人翻出来回复一句“原来你也玩过”。评论区的日期跨度常常超过五年。</span>
+      </div>
+      <div class="feature-item">
+        <span class="num">03</span>
+        <span class="desc"><strong>角落</strong> —— 除了热门榜单，还有一些几乎没人注意的分类，里面藏着冷门但完整的独立作品，像书店最底层的那排书。</span>
+      </div>
+    </div>
+
+    <!-- 温和结尾 + FAQ 摘要感 -->
+    <div class="closing">
+      <p>
+        常有人问，现在还值得去吗？这个问题其实不太对。一个存在了十几年的站点，早已不是“值得去”或“不值得”能概括的。它更像一个保存着个人存档的文件夹，你打开或不打开，它都在那里。
+      </p>
+      <p>
+        <span class="remark">如果你忘了账号，或者担心数据还在不在</span> —— 多数老账户依然可以登录，绑定的手机号或邮箱是找回的主要方式。社区里时不时有人发帖说“居然找回来了”，底下跟着一串“恭喜”。
+      </p>
+      <p style="margin-top: 0.8rem; font-size: 0.88rem; color: #7d7d7d;">
+        页面最后更新于一个普通的下午。没有倒计时，没有弹窗。
+      </p>
+    </div>
+
+    <hr>
+    <div style="font-size: 0.75rem; color: #b1a18e; text-align: right; margin-top: -0.6rem; letter-spacing: 0.03em;">
+      <span>九游 · 一段安静的叙述</span>
+    </div>
+  </div>
+</body>
+</html>
